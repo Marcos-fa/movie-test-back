@@ -8,7 +8,6 @@ moviesCtrl.add = async (req, res) => {
         const movie = new Movie({ title, description, gender });
         await movie.save();
         console.log(movie);
-        res.send('Welcome: ' + username.toUpperCase());
         res.json({
             ok: true,
             movie: movie,
