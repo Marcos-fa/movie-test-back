@@ -16,8 +16,8 @@ app.unsubscribe(session({
 
 // Routes
 app.use(require('../routes/index.routes'));
-app.use(require('../routes/users.routes'));
 app.use(require('../routes/movies.routes'));
+app.use(require('../routes/users.routes'));
 
 // Global Variables
 app.use((req, res, next) => {

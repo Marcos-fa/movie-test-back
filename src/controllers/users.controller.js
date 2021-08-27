@@ -21,7 +21,7 @@ usersCtrl.signup = async (req, res) => {
         }
     } catch (error) {
         console.log(error);
-        res.send('Error interno en el servidor');
+        res.send('Internal Server Error');
     }
 }
 
